@@ -15,7 +15,7 @@ header {
 
 .btn {
   background: white;
-  color: #007bff;
+  color: #f7ae12;
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
@@ -47,7 +47,7 @@ header {
 }
 
 .produto button {
-  background: #007bff;
+  background: #f7ae12;
   color: white;
   border: none;
   padding: 8px;
@@ -58,6 +58,11 @@ header {
 #cotacao {
   background: white;
   padding: 30px;
+}
+
+#cotacao h2 {
+  text-align: center;
+  margin-top: 0;
 }
 
 form input, form textarea {
