@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Materiais para Construção | Maputo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Materiais para a tua Obra</h1>
+  <p>Cimento, ferro, pregos e muito mais — pedes cotação e nós entregamos.</p>
+  <a href="#cotacao" class="btn">Pedir Cotação</a>
+</header>
+
+<section class="catalogo">
+
+  <!-- CIMENTO -->
+  <h2>Cimento</h2>
+  <div class="produtos">
+
+    <div class="produto">
+      <img src="cimaf.jpeg" alt="Cimento CIMAF">
+      <h3>Cimento CIMAF</h3>
+      <select>
+        <option>32.5 – Uso geral</option>
+        <option>42.5 – Estrutural</option>
+      </select>
+      <button onclick="addProduto('Cimento CIMAF')">Adicionar à cotação</button>
+    </div>
+
+    <div class="produto">
+      <img src="dugongo.jpeg" alt="Cimento Dugongo">
+      <h3>Cimento Dugongo</h3>
+      <select>
+        <option>Uso geral</option>
+        <option>Alta resistência</option>
+      </select>
+      <button onclick="addProduto('Cimento Dugongo')">Adicionar à cotação</button>
+    </div>
+
+  </div>
+
+  <!-- FERRO -->
+  <h2>Ferro / Varão</h2>
+  <div class="produtos">
+
+    <div class="produto">
+      <img src="varrao.jpeg" alt="Ferro">
+      <h3>Varão de Ferro</h3>
+      <select>
+        <option>6 mm</option>
+        <option>8 mm</option>
+        <option>10 mm</option>
+        <option>12 mm</option>
+      </select>
+      <button onclick="addProduto('Varão de Ferro')">Adicionar à cotação</button>
+    </div>
+
+  </div>
+
+  <!-- PREGOS -->
+  <h2>Pregos</h2>
+  <div class="produtos">
+
+    <div class="produto">
+      <img src="pregos.jpeg" alt="Pregos">
+      <h3>Pregos para Construção</h3>
+      <select>
+        <option>2 polegadas</option>
+        <option>3 polegadas</option>
+        <option>4 polegadas</option>
+      </select>
+      <button onclick="addProduto('Pregos')">Adicionar à cotação</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- COTAÇÃO -->
+<section id="cotacao">
+  <h2>Pedir Cotação</h2>
+
+  <form onsubmit="enviarCotacao(event)">
+    <input type="text" placeholder="Nome" required>
+    <input type="text" placeholder="WhatsApp" required>
+    <textarea id="lista" placeholder="Materiais selecionados"></textarea>
+    <input type="text" placeholder="Local da obra">
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
